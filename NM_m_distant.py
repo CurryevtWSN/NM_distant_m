@@ -54,7 +54,7 @@ T =map[T]
 N = map[N]
 
 # 数据读取，特征标注
-hp_train = pd.read_csv('E:\\Spyder_2022.3.29\\output\\machinel\\lwl_output\\NM_WSN\\nmdata.csv')
+hp_train = pd.read_csv('nmdata.csv')
 hp_train['M'] = hp_train['M'].apply(lambda x : +1 if x==1 else 0)
 features =["Marital","Gender","Primary_Site","Laterality",'Surgery','Radiation','Chemotherapy','System_management','T','N']
 target = 'M'
